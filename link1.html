@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Short Link 1</title>
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="My Short Link 1" />
+  <meta property="og:description" content="This is a demo description for link 1." />
+  <meta property="og:image" content="https://yourusername.github.io/shortlink-html/images/img1.jpg" />
+  <meta property="og:url" content="https://yourusername.github.io/shortlink-html/s/link1.html" />
+
+  <!-- Auto Redirect after 2 seconds -->
+  <meta http-equiv="refresh" content="2;url=https://example.com/original1" />
+</head>
+<body style="font-family:Arial,sans-serif; text-align:center; padding:20px;">
+  <h2>Redirecting you in 2 seconds...</h2>
+
+  <!-- Gallery -->
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; max-width:600px; margin:auto;">
+    <img src="../images/img1.jpg" style="width:100%; border-radius:10px;" />
+    <img src="../images/img2.jpg" style="width:100%; border-radius:10px;" />
+  </div>
+
+  <!-- Fallback JavaScript Redirect -->
+  <script>
+    setTimeout(() => {
+      window.location.href = "https://example.com/original1";
+    }, 2000);
+  </script>
+</body>
+</html>
